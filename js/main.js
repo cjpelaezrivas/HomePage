@@ -3,7 +3,7 @@ import { BACKGROUND_FOLDER, WEATHER_CODES } from "./classes/configurations.js";
 
 const directories = new Map([
     ["aenami", { size: 14, extension: "jpg" }],
-    ["cyberpunk", { size: 3, extension: "mp4" }],
+    ["cyberpunk", { size: 2, extension: "mp4" }],
     ["kps", { size: 8, extension: "jpg" }],
     ["rdr2", { size: 7, extension: "jpg" }]
 ]);
