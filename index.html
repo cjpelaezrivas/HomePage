@@ -144,4 +144,10 @@
 <script src="js/main.js" type="module"></script>
 <script async src="js/utils/weather.js"></script>
 
+<script>
+    if (typeof navigator.serviceWorker !== 'undefined') {
+        navigator.serviceWorker.register('js/sw.js')
+    }
+</script>
+
 </html>
