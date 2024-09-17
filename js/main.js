@@ -2,8 +2,8 @@ import * as localStorage from "./utils/local-storage.js";
 import { BACKGROUND_FOLDER, WEATHER_CODES } from "./classes/configurations.js";
 
 const directories = new Map([
-    ["aenami", { size: 14, extension: "jpg" }],
-    ["cyberpunk", { size: 2, extension: "mp4" }],
+    ["cyberpunk", { size: 3, extension: "mp4" }],
+    ["firewatch", { size: 1, extension: "mp4" }],
     ["kps", { size: 8, extension: "jpg" }],
     ["rdr2", { size: 7, extension: "jpg" }]
 ]);
@@ -56,7 +56,7 @@ function addImage() {
 function configureWeatherWidgets() {
     const weather = localStorage.getValue(WEATHER_CODES);
     if (!weather) {
-        return; 
+        return;
     }
 
     const cities = weather.split(";");
